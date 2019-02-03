@@ -1,6 +1,6 @@
 # react-splitbox
 
-> react splitter component
+> react splitter component (https://dioklecijan.github.io/react-splitbox/)
 
 [![NPM](https://img.shields.io/npm/v/react-splitbox.svg)](https://www.npmjs.com/package/react-splitbox) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
