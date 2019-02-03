@@ -23,9 +23,12 @@ import React, { Component } from 'react'
 import Splitter from 'react-splitbox'
 
 class Example extends Component {
+
+  onResize = childrenSizes => console.log(childrenSizes);
+
   render () {
     return (
-      <Splitter vertical size="33% onResize={this.onResize}>
+      <Splitter vertical size="33%" onResize={this.onResize}>
         <div>top pane</div>
         <div>bottom pane</div>
       </Splitter>
