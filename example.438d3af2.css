@@ -1,0 +1,90 @@
+.splitter {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  flex: 1 1 auto;
+  width: 100%;
+  height: 100%;
+}
+
+.splitter.vertical {
+  flex-direction: column;
+  height: 100%;
+}
+
+.splitter .divider {
+  flex: 0 0 auto;
+  /* overwritten with DIVIDER_SIZE in Splitter.jsx */
+  width: 1px;
+  height: 100%;
+  cursor: col-resize;
+  background: transparent;
+  padding: 0 3px;
+}
+
+.splitter .divider > :first-child {
+  background: #ccc;
+  height: 100%;
+  width: 100%;
+}
+
+.splitter.vertical .divider {
+  cursor: row-resize;
+  /* overwritten with DIVIDER_SIZE in Splitter.jsx */
+  height: 1px;
+  width: 100%;
+  padding: 3px 0;
+}
+
+.splitter .divider > first-child:hover {
+  background: #bbbbbb;
+}
+
+.splitter .divider.resizing > first-child {
+  background: #999;
+}
+
+.splitter .pane {
+  flex: 0 0 auto;
+  overflow: auto;
+}
+
+.splitter .pane:first-child {
+  flex: 1 1 auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: whitesmoke;
+}
+
+.linkbar {
+  flex: 0 0 45px;
+  overflow: auto;
+  background: yellowgreen;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.link {
+  background: transparent;
+  color: #555;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 0 6px;
+  border: none;
+  cursor: pointer;
+}
+.link.active {
+  border-bottom: 1px solid #000;
+  color: #000;
+}
+.link:hover {
+  color: #000;
+}
+
+.main {
+  flex: 1 1 auto;
+  background: papayawhip;
+}
