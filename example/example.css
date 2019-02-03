@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: whitesmoke;
+}
+
+.linkbar {
+  flex: 0 0 45px;
+  overflow: auto;
+  background: yellowgreen;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.link {
+  background: transparent;
+  color: #555;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 0 6px;
+  border: none;
+  cursor: pointer;
+}
+.link.active {
+  border-bottom: 1px solid #000;
+  color: #000;
+}
+.link:hover {
+  color: #000;
+}
+
+.main {
+  flex: 1 1 auto;
+  background: papayawhip;
+}

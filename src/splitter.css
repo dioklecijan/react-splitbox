@@ -1,0 +1,54 @@
+.splitter {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  flex: 1 1 auto;
+  width: 100%;
+  height: 100%;
+}
+
+.splitter.vertical {
+  flex-direction: column;
+  height: 100%;
+}
+
+.splitter .divider {
+  flex: 0 0 auto;
+  /* overwritten with DIVIDER_SIZE in Splitter.jsx */
+  width: 1px;
+  height: 100%;
+  cursor: col-resize;
+  background: transparent;
+  padding: 0 3px;
+}
+
+.splitter .divider > :first-child {
+  background: #ccc;
+  height: 100%;
+  width: 100%;
+}
+
+.splitter.vertical .divider {
+  cursor: row-resize;
+  /* overwritten with DIVIDER_SIZE in Splitter.jsx */
+  height: 1px;
+  width: 100%;
+  padding: 3px 0;
+}
+
+.splitter .divider > first-child:hover {
+  background: #bbbbbb;
+}
+
+.splitter .divider.resizing > first-child {
+  background: #999;
+}
+
+.splitter .pane {
+  flex: 0 0 auto;
+  overflow: auto;
+}
+
+.splitter .pane:first-child {
+  flex: 1 1 auto;
+}
